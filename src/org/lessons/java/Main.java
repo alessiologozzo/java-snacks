@@ -3,12 +3,15 @@ package org.lessons.java;
 import java.util.Scanner;
 
 import org.lessons.java.snacks.Snack1;
+import org.lessons.java.snacks.Snack10;
 import org.lessons.java.snacks.Snack2;
 import org.lessons.java.snacks.Snack3;
 import org.lessons.java.snacks.Snack4;
 import org.lessons.java.snacks.Snack5;
 import org.lessons.java.snacks.Snack6;
 import org.lessons.java.snacks.Snack7;
+import org.lessons.java.snacks.Snack8;
+import org.lessons.java.snacks.Snack9;
 import org.lessons.java.utils.InputInterface;
 
 public class Main {
@@ -18,8 +21,8 @@ public class Main {
 		int choice = 0;
 
 		do {
-			choice = InputInterface.getInt(scanner, 0, 7,
-					"MENU' PRINCIPALE\nScegli uno snack da eseguire:\n1) Snack 1 - Pari e Dispari\n2) Snack 2 - Generatore di nomi\n3) Snack 3 - Somma array\n4) Snack 4 - Palindroma\n5) Snack 5 - Composizione stringa\n6) Snack 6 - Da string a int\n7) Snack 7 - Convertitore secondi\n0) Esci");
+			choice = InputInterface.getInt(scanner, 0, 10,
+					"MENU' PRINCIPALE\nScegli uno snack da eseguire:\n1) Snack 1 - Pari e Dispari\n2) Snack 2 - Generatore di nomi\n3) Snack 3 - Somma array\n4) Snack 4 - Palindroma\n5) Snack 5 - Composizione stringa\n6) Snack 6 - Da string a int\n7) Snack 7 - Convertitore secondi\n8) Snack 8 - Min, Max, Avg in array\n9) Snack 9 - Somma numeri\n10) Snack 10 - Elementi array\n0) Esci");
 
 			switch (choice) {
 			case 1:
@@ -49,7 +52,20 @@ public class Main {
 			case 7:
 				Snack7.run(scanner);
 				break;
+				
+			case 8:
+				Snack8.run(scanner);
+				break;
+				
+			case 9:
+				Snack9.run(scanner);
+				break;
+				
+			case 10:
+				Snack10.run(scanner);
+				break;
 			}
+			
 		} while (choice > 0);
 
 		System.out.println(System.lineSeparator() + "Arrivederci!");
