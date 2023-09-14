@@ -32,7 +32,9 @@ public class Snack5 {
 						SymbolsCount++;
 
 			System.out.println("Lettere: " + lettersCount + System.lineSeparator() + "Numeri: " + numbersCount
-					+ System.lineSeparator() + "Simboli: " + SymbolsCount);
+					+ System.lineSeparator() + "Caratteri speciali: " + SymbolsCount);
+			
+			lettersCount = numbersCount = SymbolsCount = 0;
 		}
 
 		System.out.println("Torno al menu' principale..." + System.lineSeparator() + System.lineSeparator());
